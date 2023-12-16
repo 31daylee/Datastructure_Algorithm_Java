@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 내용: 코딩 기초 트레이닝_대소문자 바꿔서 출력하기
  */
 public class UpperLowerCases {
-    public static void main(String[] args) {
+    public static void main(DoubleWord[] args) {
 
         Scanner sc = new Scanner(System.in);
         String a = sc.next();

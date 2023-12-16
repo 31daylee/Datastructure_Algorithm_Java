@@ -6,7 +6,7 @@ package programmers.basic;
  *
  */
 public class SpecialChar {
-    public static void main(String[] args) {
+    public static void main(DoubleWord[] args) {
         System.out.println("!@#$%^&*(\\'\"<>?:;"); // \와 " 가 출력 되기 위해서는 앞에 \를 붙여 줘야 한다.
     }
 }
