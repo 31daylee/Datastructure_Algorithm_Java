@@ -1,0 +1,15 @@
+package programmers.basic;
+/**
+ * 날짜: 2023/12/19
+ * 내용: 코딩 기초 트레이닝_flag에 따른 다른 값 반환하기
+ * 출력: 두 정수 a, b와 boolean 변수 flag가 매개변수로 주어질 때, flag가 true면 a + b를 false면 a - b를 return 하는 solution 함수를 작성해 주세요.
+ */
+class Flag {
+    public int solution(int a, int b, boolean flag) {
+        if(flag == true){
+            return a+ b;
+        }else{
+            return a - b;
+        }
+    }
+}
