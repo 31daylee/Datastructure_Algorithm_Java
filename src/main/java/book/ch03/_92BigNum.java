@@ -47,13 +47,13 @@ public class _92BigNum {
 
         while (true){
             for(int i = 0; i <k; i++){
-                if(localM == 0) break;
+                if(localM == 0) break; // m이 0이라면 반복문 탈출
                 result += first;
-                localM -= 1;
+                localM -= 1; // 더할 때마다 횟수 1씩 빼기
             }
             if(localM == 0) break;
-            result +=second;
-            localM -= 1;
+            result += second; // 두 번째로 큰 수는 한 번 더하기 (반복문 밖)
+            localM -= 1; // 더할 때마다 횟수 1씩 빼기
         }
         System.out.println("result : "+ result);
     }
@@ -61,8 +61,10 @@ public class _92BigNum {
     static void advancedSolution(){
         System.out.println("[95p 최적화 솔루션]");
 
-        int count = (m / (k+1)) * k;
-        int remain = m -count;
+        int count = (m / (k+1)) * k + m %(k+1); // 가장 큰 수가 더해지는 횟수
+        int remain = m -count;  // 나머지 횟수
+        System.out.println("count : "+ count);
+        System.out.println("remain : "+ remain);
 
         int result = count * first + remain * second;
         System.out.println("result : "+ result);
