@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * 내용: 코딩 기초 트레이닝_배열 만들기 3
  */
 public class MakeArr3 {
-    public int[] solution(int[] arr, int[][] intervals) {
+    public int[] makeArr3(int[] arr, int[][] intervals) {
         ArrayList<Integer> result = new ArrayList<>();
 
         for(int i=0; i<intervals.length; i++){
