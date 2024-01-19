@@ -7,7 +7,7 @@ import java.util.Arrays;
  * 내용: 코딩 기초 트레이닝_배열 조각하기
  */
 public class DoArr {
-    public int[] solution(int[] arr, int[] query) {
+    public int[] doArr(int[] arr, int[] query) {
 
         for(int i=0; i<query.length; i++){
             if(i % 2 == 0){
